@@ -1,11 +1,11 @@
 name: Metrics
 on:
-  # Schedule daily updates
-  schedule: [{cron: "0 0 * * *"}]
-  # (optional) Run workflow manually
+  schedule:
+    - cron: '0 0 * * 1'
   workflow_dispatch:
-  # (optional) Run workflow when pushing on main
-  push: {branches: ["main"]}
+  push:
+    branches:
+      - main
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -16,7 +16,8 @@ jobs:
           
           filename: metrics.svg
           user: litarussell
-          base: header, repositories
+          template: classic
+          base: header, activity, community, repositories, metadata
           config_timezone: Asia/Shanghai
           config_twemoji: yes
           plugin_lines: yes
