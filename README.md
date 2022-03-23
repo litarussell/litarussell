@@ -17,3 +17,5 @@ Here are some ideas to get you started:
 - 😊 I'm a Front-end engineer
 - 🔭 I’m currently working on TencentCloud in WuHan
 - 🌱 I’m currently learning compiler
+
+<img align="center" src="/metrics.svg" alt="Metrics" width="400">
